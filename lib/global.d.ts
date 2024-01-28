@@ -1,10 +1,10 @@
 // Type definitions for mocha 2.2.5
-// Project: http://mochajs.org/
+// Project: https://github.com/mochajs/mocha
 // Original Definitions by:
 //   Kazi Manzur Rashid <https://github.com/kazimanzurrashid/>,
 //   otiai10 <https://github.com/otiai10>,
 //   jt000 <https://github.com/jt000>,
-//   Vadim Macagon <https://github.com/enlight>
+//   Vadim Macagon <https://github.com/enlight> & Kazi Manzur Rashid <https://github.com/kazimanzurrashid> & otiai10 <https://github.com/otiai10> & jt000 <https://github.com/jt000>
 
 interface MochaSetupOptions {
     // milliseconds to wait before considering a test slow
@@ -146,7 +146,7 @@ declare class Mocha {
     asyncOnly(value: boolean): Mocha;
     noHighlighting(value: boolean): Mocha;
     /** Runs tests and invokes `onComplete()` when finished. */
-    run(onComplete?: (failures: number) => void): Mocha.IRunner;
+    run(onComplete?: (failures: number) => void): void;
 }
 
 // merge the Mocha class declaration with a module
